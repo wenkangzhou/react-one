@@ -1,0 +1,21 @@
+#footerbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index:10;
+    width: 100%;
+}
+.footer-item {
+    flex: 1;
+    background-color: #5bc3be;
+    color: white;
+    border-left: 1px solid white;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.footer-item:nth-child(1){
+    border-left: 0px;
+}
