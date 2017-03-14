@@ -7,7 +7,10 @@
 - 修改了home，加入了swipe
 
 - 发现关于redux部分的学习不清晰，停止学习
+
 - 寻找redux方面更清晰的项目学习
+
+- redux入门参见[理解Redux](http://www.jianshu.com/p/83c88a1801c6)
 
 ##经验总结
 
@@ -15,8 +18,11 @@
 
 1.组件名首字母必须大写，不然import压根都找不到。
 
+2.类选择器用className，估计是class是关键字的原因。
 
-2.React数据获取为什么一定要在componentDidMount里面调用？
+3.类和模块内部默认使用了严格模式。
+
+4.React数据获取为什么一定要在componentDidMount里面调用？
 
     这与React组件的生命周期有关，组件挂载时有关的生命周期有以下几个:
     constructor()
@@ -34,7 +40,7 @@
     虽然与组件上的数据无关的加载，也可以在constructor里作，但constructor是作组件state初绐化工作，并不是设计来作加载数据这工作的，
     所以所有有副作用的代码都会集中在componentDidMount方法里。
 
-3.Redux作初始数据载入时，是可以不需透过React组件的生命周期方法
+5.Redux作初始数据载入时，是可以不需透过React组件的生命周期方法
 
     import React from 'react'
     import ReactDOM from 'react-dom'
